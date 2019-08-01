@@ -31,7 +31,7 @@ class Person extends Component {
         
         return (
             <Aux>
-                {this. context.authenticated ? (<p>authenticated!</p>) : (<p>Please log in</p>)}
+                {this.context.authenticated ? (<p>authenticated!</p>) : (<p>Please log in</p>)}
                 
                 <p onClick={this.props.click}>
                     I'm a {this.props.name} and I am {this.props.age} years old!
