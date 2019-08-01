@@ -31,7 +31,6 @@ class Person extends Component {
         
         return (
             <Aux>
-
                 {this. context.authenticated ? (<p>authenticated!</p>) : (<p>Please log in</p>)}
                 
                 <p onClick={this.props.click}>
