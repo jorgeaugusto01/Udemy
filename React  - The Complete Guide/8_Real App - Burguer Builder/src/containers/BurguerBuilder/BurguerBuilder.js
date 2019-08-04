@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 
 import Aux from '../../hoc/Aux';
-import  Burguer from '../../components/Burguer/Burguer';
+import Burguer from '../../components/Burguer/Burguer';
+import BuildControls from '../../components/Burguer/BuildControls/BuildControls';
 
 class BurguerBuilder extends Component {
     // constructor(props) {
@@ -11,10 +12,10 @@ class BurguerBuilder extends Component {
 
     state = {
         ingredients: {
-            salad: 1,
-            bacon: 1,
-            chesse: 2,
-            meat: 2
+            salad: 0,
+            bacon: 0,
+            cheese: 0,
+            meat: 0
         }
     }
     
@@ -22,7 +23,7 @@ class BurguerBuilder extends Component {
         return (
             <Aux>
                 <Burguer ingredients={this.state.ingredients} />
-                <div>Build Controls</div>
+                <BuildControls/>
             </Aux>
         );
     }
